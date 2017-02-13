@@ -1,7 +1,8 @@
 import fbchat
 import time
 username = str(input("Username: "))
-client = fbchat.Client(username, "yeeksentenceh")
+password = str(input("Password: "))
+client = fbchat.Client(username, password)
 
 name = str(input("Name"))
 friends = client.getUsers(name)

@@ -1,0 +1,6 @@
+ratio = input("Enter space seperated ratio").split()
+a = int(ratio[0])
+b = int(ratio[1])
+size = float(input("Enter screen size"))
+c,d = ((((size**2)/(a**2+b**2))**0.5)*a,(((size**2)/(a**2+b**2))**0.5)*b)
+print(round(c,2),round(d,2))

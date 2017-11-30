@@ -23,7 +23,10 @@ def primegenerator(y):
     list2 = [x for x in list1 if x%5 != 0]
     list3 = [x for x in list2 if x%7 != 0]
     lista = [elem for elem in list3 if checkforprime(elem)]
-    print(lista[-1])
+    print(lista)
+
+print(primegenerator(1000))
+
 
 def apg(y):
     lista = [elem for elem in range(2,y+1) if checkforprime(elem)]
